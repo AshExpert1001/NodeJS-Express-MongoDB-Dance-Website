@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title Ash Dance Acadamy
+        block style
+            style
+                include ../static/style.css     
+    
+        script 
+            include ../static/main.js
+    body
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | Ash 
+                li #[a(href="/") Home]
+                li #[a(href="/") About Us]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+                
+        block content
+
+        footer#footer
+            | &copy; CopyRights By Ash Dance Acadamy 2021 
